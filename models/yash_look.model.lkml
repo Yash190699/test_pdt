@@ -8,7 +8,7 @@ include: "/views/**/*.view.lkml"
 # use the Quick Help panel on the right to see documentation.
 
 datagroup: yash_look_default_datagroup {
-  # sql_trigger: SELECT MAX(id) FROM etl_log;;
+ sql_trigger: SELECT MINUTE(CURTIME);;
   max_cache_age: "1 hour"
 }
 
